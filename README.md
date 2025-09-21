@@ -1,2 +1,70 @@
 # patient-Management-System-PMS-
 The Patient Management System is a database project designed to store and manage patient information efficiently.
+-- 1️⃣ Create Table
+CREATE TABLE Patients (
+    Patient_ID INT PRIMARY KEY,
+    Patient_Name VARCHAR(50),
+    Age INT,
+    Gender ENUM('Male','Female'),
+    Blood_Group VARCHAR(3),
+    City VARCHAR(50),
+    Diagnosis VARCHAR(50),
+    Treatment VARCHAR(50),
+    Contact_Number VARCHAR(15)
+);
+
+-- 2️⃣ Insert 50 Patients
+INSERT INTO Patients (Patient_ID, Patient_Name, Age, Gender, Blood_Group, City, Diagnosis, Treatment, Contact_Number)
+VALUES
+(1, 'Rahul Sharma', 34, 'Male', 'B+', 'Delhi', 'Diabetes', 'Insulin', '9876543210'),
+(2, 'Priya Verma', 28, 'Female', 'O+', 'Mumbai', 'Hypertension', 'Medication', '9876543211'),
+(3, 'Amit Kumar', 45, 'Male', 'A+', 'Pune', 'Asthma', 'Inhaler', '9876543212'),
+(4, 'Neha Singh', 30, 'Female', 'AB+', 'Delhi', 'Migraine', 'Painkillers', '9876543213'),
+(5, 'Rohan Mehta', 50, 'Male', 'O-', 'Bangalore', 'Heart Disease', 'Surgery', '9876543214'),
+(6, 'Anjali Rao', 38, 'Female', 'B-', 'Hyderabad', 'Thyroid', 'Medication', '9876543215'),
+(7, 'Suresh Patel', 42, 'Male', 'A-', 'Ahmedabad', 'Diabetes', 'Insulin', '9876543216'),
+(8, 'Kavita Joshi', 29, 'Female', 'AB-', 'Jaipur', 'Hypertension', 'Medication', '9876543217'),
+(9, 'Vikram Chauhan', 36, 'Male', 'O+', 'Delhi', 'Asthma', 'Inhaler', '9876543218'),
+(10, 'Sneha Kapoor', 27, 'Female', 'B+', 'Mumbai', 'Migraine', 'Painkillers', '9876543219'),
+(11, 'Arjun Nair', 33, 'Male', 'A+', 'Chennai', 'Diabetes', 'Insulin', '9876543220'),
+(12, 'Pooja Desai', 31, 'Female', 'O-', 'Pune', 'Hypertension', 'Medication', '9876543221'),
+(13, 'Manish Gupta', 44, 'Male', 'B+', 'Delhi', 'Heart Disease', 'Surgery', '9876543222'),
+(14, 'Ritu Sharma', 26, 'Female', 'AB+', 'Mumbai', 'Asthma', 'Inhaler', '9876543223'),
+(15, 'Karan Singh', 39, 'Male', 'O+', 'Jaipur', 'Thyroid', 'Medication', '9876543224'),
+(16, 'Meena Kumari', 35, 'Female', 'A-', 'Lucknow', 'Migraine', 'Painkillers', '9876543225'),
+(17, 'Sanjay Patel', 40, 'Male', 'B+', 'Ahmedabad', 'Diabetes', 'Insulin', '9876543226'),
+(18, 'Anika Roy', 32, 'Female', 'AB-', 'Kolkata', 'Hypertension', 'Medication', '9876543227'),
+(19, 'Rohit Jain', 37, 'Male', 'O+', 'Delhi', 'Asthma', 'Inhaler', '9876543228'),
+(20, 'Simran Kaur', 29, 'Female', 'B+', 'Chandigarh', 'Thyroid', 'Medication', '9876543229'),
+(21, 'Vivek Malhotra', 43, 'Male', 'A+', 'Mumbai', 'Heart Disease', 'Surgery', '9876543230'),
+(22, 'Priyanka Singh', 28, 'Female', 'O-', 'Pune', 'Migraine', 'Painkillers', '9876543231'),
+(23, 'Rajesh Kumar', 46, 'Male', 'B+', 'Delhi', 'Diabetes', 'Insulin', '9876543232'),
+(24, 'Sneha Rani', 30, 'Female', 'AB+', 'Jaipur', 'Asthma', 'Inhaler', '9876543233'),
+(25, 'Akash Verma', 38, 'Male', 'O+', 'Bangalore', 'Thyroid', 'Medication', '9876543234'),
+(26, 'Divya Sharma', 27, 'Female', 'A-', 'Lucknow', 'Migraine', 'Painkillers', '9876543235'),
+(27, 'Manoj Patel', 41, 'Male', 'B+', 'Ahmedabad', 'Diabetes', 'Insulin', '9876543236'),
+(28, 'Anjali Mehta', 33, 'Female', 'AB-', 'Mumbai', 'Hypertension', 'Medication', '9876543237'),
+(29, 'Deepak Rao', 39, 'Male', 'O+', 'Delhi', 'Asthma', 'Inhaler', '9876543238'),
+(30, 'Richa Joshi', 31, 'Female', 'B+', 'Pune', 'Thyroid', 'Medication', '9876543239'),
+(31, 'Sandeep Kumar', 44, 'Male', 'A+', 'Jaipur', 'Heart Disease', 'Surgery', '9876543240'),
+(32, 'Neha Patel', 29, 'Female', 'O-', 'Bangalore', 'Migraine', 'Painkillers', '9876543241'),
+(33, 'Rohit Sharma', 36, 'Male', 'B+', 'Delhi', 'Diabetes', 'Insulin', '9876543242'),
+(34, 'Priya Nair', 28, 'Female', 'AB+', 'Mumbai', 'Asthma', 'Inhaler', '9876543243'),
+(35, 'Kunal Verma', 40, 'Male', 'O+', 'Pune', 'Thyroid', 'Medication', '9876543244'),
+(36, 'Ananya Singh', 32, 'Female', 'A-', 'Lucknow', 'Migraine', 'Painkillers', '9876543245'),
+(37, 'Rakesh Kumar', 42, 'Male', 'B+', 'Ahmedabad', 'Diabetes', 'Insulin', '9876543246'),
+(38, 'Meera Sharma', 30, 'Female', 'AB-', 'Mumbai', 'Hypertension', 'Medication', '9876543247'),
+(39, 'Vikash Patel', 37, 'Male', 'O+', 'Delhi', 'Asthma', 'Inhaler', '9876543248'),
+(40, 'Shreya Joshi', 29, 'Female', 'B+', 'Pune', 'Thyroid', 'Medication', '9876543249'),
+(41, 'Anil Kumar', 45, 'Male', 'A+', 'Jaipur', 'Heart Disease', 'Surgery', '9876543250'),
+(42, 'Pooja Verma', 28, 'Female', 'O-', 'Bangalore', 'Migraine', 'Painkillers', '9876543251'),
+(43, 'Rohit Mehra', 38, 'Male', 'B+', 'Delhi', 'Diabetes', 'Insulin', '9876543252'),
+(44, 'Nisha Sharma', 31, 'Female', 'AB+', 'Mumbai', 'Asthma', 'Inhaler', '9876543253'),
+(45, 'Karan Gupta', 40, 'Male', 'O+', 'Pune', 'Thyroid', 'Medication', '9876543254'),
+(46, 'Anika Singh', 29, 'Female', 'A-', 'Lucknow', 'Migraine', 'Painkillers', '9876543255'),
+(47, 'Manoj Verma', 43, 'Male', 'B+', 'Ahmedabad', 'Diabetes', 'Insulin', '9876543256'),
+(48, 'Ritu Joshi', 30, 'Female', 'AB-', 'Mumbai', 'Hypertension', 'Medication', '9876543257'),
+(49, 'Vikram Sharma', 37, 'Male', 'O+', 'Delhi', 'Asthma', 'Inhaler', '9876543258'),
+(50, 'Mohit Yadav', 41, 'Male', 'A+', 'Lucknow', 'Thyroid', 'Medication', '9876543259');
+
+
