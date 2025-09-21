@@ -1,4 +1,4 @@
-# patient-Management-System-PMS-
+# Patient-Management-System-PMS-
 The Patient Management System is a database project designed to store and manage patient information efficiently.
 -- 1️⃣ Create Table
 CREATE TABLE Patients (
