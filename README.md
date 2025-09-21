@@ -68,3 +68,4 @@ VALUES
 (50, 'Mohit Yadav', 41, 'Male', 'A+', 'Lucknow', 'Thyroid', 'Medication', '9876543259');
 
 
+<img width="1600" height="1200" alt="image" src="https://github.com/user-attachments/assets/5672f580-224d-4d7b-9c6d-0ce0ca7d6861" />
